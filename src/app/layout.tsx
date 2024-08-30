@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={WorkSans.className}>{children}</body>
+      <body className={`text-dark-purple min-h-dvh flex items-center justify-center bg-light-pink ${WorkSans.className}`}>{children}</body>
     </html>
   );
 }

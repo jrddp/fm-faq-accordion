@@ -1,4 +1,5 @@
 import Accordion from "@components/Accordion";
+import Image from "next/image";
 
 export default function Home() {
   type Question = {
@@ -23,7 +24,7 @@ export default function Home() {
         "Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent way to showcase your skills to potential employers!",
     },
     {
-      question: "How can I get help if I'm stuck on a Frontend Mentor challenge?",
+      question: "How can I get help if I'm stuck on a challenge?",
       answer:
         "The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members.",
     },
@@ -31,27 +32,38 @@ export default function Home() {
 
   return (
     <>
-      <main className="flex flex-col items-center justify-center min-h-dvh">
-        <h1>FAQs</h1>
+      <main className="flex flex-col max-w-lg p-4 bg-white rounded-xl">
+        <div className="flex items-center gap-4 px-2 py-4">
+          <Image
+            className="size-8"
+            src="/images/icon-star.svg"
+            alt="Star icon"
+            width={24}
+            height={24}
+          />
+          <h1 className="text-5xl font-bold">FAQs</h1>
+        </div>
 
-        {questions.map(({ question, answer }) => (
-          <Accordion key={question} title={question}>
-            <p>{answer}</p>
-          </Accordion>
-        ))}
+        <div className="divide-y-[1px]">
+          {questions.map(({ question, answer }) => (
+            <Accordion key={question} title={question}>
+              <p>{answer}</p>
+            </Accordion>
+          ))}
+        </div>
       </main>
       <footer className="absolute w-full text-center bottom-4">
         Challenge by{" "}
         <a
-          className="hover:underline"
+          className="hover:underline text-purple font-semibold"
           href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
         >
           Frontend Mentor
         </a>
         . Coded by{" "}
-        <a className="hover:underline" href="#">
-          Your Name Here
+        <a className="hover:underline text-purple font-semibold" href="https://jrddp.me">
+        Jared Peters
         </a>
         .
       </footer>

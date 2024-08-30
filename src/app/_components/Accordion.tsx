@@ -13,14 +13,24 @@ export default function Accordion({
 
   return (
     <div className="w-full">
-      <div
-        className="flex items-center justify-between w-full group"
+      <button
+        className="flex items-center justify-between w-full p-4 group"
         onClick={() => setIsOpen(open => !open)}
       >
-        <h2 className="font-semibold group-hover:text-purple">{title}</h2>
-        <Image src="/images/icon-plus.svg" alt="Plus icon" width={24} height={24} />
+        <h2 className="font-semibold transition-colors group-hover:text-purple">{title}</h2>
+        {isOpen ? (
+          <Image src="/images/icon-minus.svg" alt="Minus icon" width={24} height={24} />
+        ) : (
+          <Image src="/images/icon-plus.svg" alt="Plus icon" width={24} height={24} />
+        )}
+      </button>
+      <div
+        className={`w-full px-4 pt-0 text-sm text-grayish-purple transition-all grid ${
+          isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+        }`}
+      >
+        <div className="overflow-hidden [&>*]:pb-4">{children}</div>
       </div>
-      {isOpen && <div>{children}</div>}
     </div>
   );
 }
