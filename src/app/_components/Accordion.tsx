@@ -14,7 +14,7 @@ export default function Accordion({
   return (
     <div className="w-full">
       <button
-        className="flex items-center justify-between w-full p-4 group"
+        className="flex items-center justify-between w-full py-4 px-2 sm:px-4 group gap-8 text-left"
         onClick={() => setIsOpen(open => !open)}
       >
         <h2 className="font-semibold transition-colors group-hover:text-purple">{title}</h2>
@@ -25,7 +25,7 @@ export default function Accordion({
         )}
       </button>
       <div
-        className={`w-full px-4 pt-0 text-sm text-grayish-purple transition-all grid ${
+        className={`w-full px-2 sm:px-4 pt-0 text-sm text-grayish-purple transition-all grid ${
           isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
         }`}
       >

@@ -15,9 +15,6 @@ const config: Config = {
         "dark-purple": "hsl(292, 42%, 14%)",
         "purple": "hsl(281, 83%, 54%)",
       },
-      fontSize: {
-        base: "20px",
-      },
     },
   },
   plugins: [],
