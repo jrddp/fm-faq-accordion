@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Work_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const WorkSans = Work_Sans({ subsets: ["latin"], weight: ["400", "600", "700"] });
 
 export const metadata: Metadata = {
-  title: "Frontend Mentor",
+  title: "Frontend Mentor | FAQ Accordion",
   icons: {
     icon: "/images/favicon-32x32.png",
   },
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={WorkSans.className}>{children}</body>
     </html>
   );
 }

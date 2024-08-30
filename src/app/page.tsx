@@ -1,15 +1,36 @@
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center space-y-2 min-h-dvh">
-      <h2 className="absolute text-sm font-light top-4">NextJS Frontend Mentor Template</h2>
-      <h1 className="text-lg font-bold underline">TODO</h1>
-      <ul className="space-y-1 list-disc max-w-60">
-        <li>Download starter code</li>
-        <li>Copy assets into /public</li>
-        <li>Set Tailwind color theme based on style guide</li>
-        <li>Import fonts in layout.tsx</li>
-        <li>Change title in layout.tsx</li>
-      </ul>
+    <main className="flex flex-col items-center justify-center min-h-dvh">
+  <h1>
+    FAQs
+  </h1>
+
+What is Frontend Mentor, and how will it help me?
+
+Frontend Mentor offers realistic coding challenges to help developers improve their 
+frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
+all levels and ideal for portfolio building.
+
+Is Frontend Mentor free?
+
+Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
+option providing access to a range of projects suitable for all skill levels.
+
+Can I use Frontend Mentor projects in my portfolio?
+
+Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+way to showcase your skills to potential employers!
+
+How can I get help if I'm stuck on a Frontend Mentor challenge?
+
+The best place to get help is inside Frontend Mentor's Discord community. There's a help 
+channel where you can ask questions and seek support from other community members.
+
+
+<div>
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Your Name Here</a>.
+</div>
     </main>
   );
 }
