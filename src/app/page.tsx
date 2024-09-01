@@ -49,13 +49,19 @@ export default function Home() {
 
       <main className="flex flex-col max-w-lg p-4 bg-white rounded-xl">
         <div className="flex items-center gap-4 px-2 py-4">
-          <Image
+          <svg
             className="size-6 sm:size-8"
-            src="/images/icon-star.svg"
-            alt="Star icon"
-            width={40}
-            height={41}
-          />
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="41"
+            fill="none"
+            viewBox="0 0 40 41"
+          >
+            <path
+              fill="#AD28EB"
+              d="M37.5 20.5a2.467 2.467 0 0 1-1.64 2.344l-9.913 3.604-3.603 9.911a2.5 2.5 0 0 1-4.688 0l-3.604-9.922-9.911-3.593a2.5 2.5 0 0 1 0-4.688l9.921-3.604 3.594-9.911a2.5 2.5 0 0 1 4.688 0l3.604 9.921 9.911 3.594A2.467 2.467 0 0 1 37.5 20.5Z"
+            />
+          </svg>
           <h1 className="text-3xl font-bold sm:text-5xl">FAQs</h1>
         </div>
 
