@@ -19,9 +19,9 @@ export default function Accordion({
       >
         <h2 className="font-semibold transition-colors group-hover:text-purple">{title}</h2>
         {isOpen ? (
-          <Image src="/images/icon-minus.svg" alt="Minus icon" width={24} height={24} />
+          <Image src="/images/icon-minus.svg" alt="Minus icon" width={30} height={31} />
         ) : (
-          <Image src="/images/icon-plus.svg" alt="Plus icon" width={24} height={24} />
+          <Image src="/images/icon-plus.svg" alt="Plus icon" width={30} height={31} />
         )}
       </button>
       <div

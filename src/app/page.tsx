@@ -53,8 +53,8 @@ export default function Home() {
             className="size-6 sm:size-8"
             src="/images/icon-star.svg"
             alt="Star icon"
-            width={24}
-            height={24}
+            width={40}
+            height={41}
           />
           <h1 className="text-3xl font-bold sm:text-5xl">FAQs</h1>
         </div>
