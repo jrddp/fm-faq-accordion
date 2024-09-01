@@ -14,12 +14,21 @@ export default function Accordion({
   return (
     <div className="w-full">
       <button
-        className="flex items-center justify-between w-full gap-8 sm:gap-0 px-2 text-left sm:px-4 group py-4"
+        className="flex items-center justify-between w-full gap-8 px-2 py-4 text-left sm:gap-0 sm:px-4 group"
         onClick={() => setIsOpen(open => !open)}
       >
         <h2 className="font-semibold transition-colors group-hover:text-purple">{title}</h2>
-        <svg className="size-5" width="30" height="31" viewBox="0 0 30 31" xmlns="http://www.w3.org/2000/svg">
-          <path className={`transition-colors duration-300 ${isOpen ? "fill-dark-purple" : "fill-purple"}`}
+        <svg
+          className="size-5 min-w-5 min-h-5"
+          width="30"
+          height="31"
+          viewBox="0 0 30 31"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            className={`transition-colors duration-300 ${
+              isOpen ? "fill-dark-purple" : "fill-purple"
+            }`}
             id="circle"
             fill-rule="evenodd"
             stroke="none"
@@ -32,7 +41,10 @@ export default function Accordion({
             stroke="none"
             d="M 7.56 15.5 C 7.56 16.527248 8.392751 17.360001 9.42 17.360001 L 20.58 17.360001 C 21.60725 17.360001 22.440001 16.527248 22.440001 15.5 C 22.440001 14.47275 21.60725 13.639999 20.58 13.639999 L 9.42 13.639999 C 8.392751 13.639999 7.56 14.47275 7.56 15.5 Z"
           />
-          <path className={`transform transition-transform origin-center duration-300 ease-out ${isOpen ? "rotate-90" : ""}`}
+          <path
+            className={`transform transition-transform origin-center duration-300 ease-out ${
+              isOpen ? "rotate-90" : ""
+            }`}
             id="vertical"
             fill="#ffffff"
             fill-rule="evenodd"
